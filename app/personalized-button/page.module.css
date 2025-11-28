@@ -1,0 +1,99 @@
+.container {
+  background: #fff;
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 1.5rem;
+  width: 100vw;
+  padding: 10vw;
+}
+
+@media all and (orientation: landscape), (min-width: 768px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+.container * {
+  font-family: Google Sans;
+}
+
+.container button {
+  width: max-content;
+  background: #1a73e8;
+  border: none;
+  box-shadow: 2px 2px 4px #0000002e;
+  border-radius: 4px;
+  padding: 0.2rem 2rem;
+  color: white;
+  min-height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.container a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.signInBox {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 2px dashed #e0e0e0;
+  border-radius: 8px;
+  justify-items: center;
+}
+
+.loadingBox {
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcomeBox {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background: #e8f5e9;
+  border-radius: 8px;
+  border: 2px solid #4caf50;
+}
+
+.userInfo {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.profileImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+}
+
+.signOutButton {
+  background: #d32f2f !important;
+}
+
+.infoBox {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff3e0;
+  border-radius: 8px;
+}
+
+.optionsList {
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
